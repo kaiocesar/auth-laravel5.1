@@ -1,10 +1,10 @@
-@extends('layouts.masters')
-@section('title', 'Página inicial')
+@extends('layouts.dashboard')
+@section('title', 'área administrativa')
 
 @section('content')
     <div class="container">
         <div class="page-header">
-            <h1>Home page</h1>
+            <h1>Dashboard</h1>
         </div>
     </div>
 @endsection
