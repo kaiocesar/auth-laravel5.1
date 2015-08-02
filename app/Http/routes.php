@@ -15,7 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('home', 'HomeController@index');
+Route::group(['middleware'=>'auth'], function(){
+    Route::get('home', 'HomeController@index');
+
+});
+
 
 
 Route::controllers([
